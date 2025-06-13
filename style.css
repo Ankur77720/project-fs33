@@ -1,7 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html,
@@ -10,45 +14,95 @@ body {
     width: 100%;
 }
 
-main {
-    padding: 50px;
+main,
+.hero-section {
+    width: 100%;
+    height: 100%;
 }
 
-.top {
+.hero-section {
     display: flex;
+    padding: 30px;
+    gap: 20px;
 }
 
-.top h1 {
-    font-size: 250px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: -10px;
+.hero-section .left,
+.hero-section .right {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
 }
 
-.top .right {
+.hero-section .left {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
-    gap:40px;
+    gap: 20px;
 }
 
-.top .right p {
-    max-width: 200px;
-    text-align: center;
-}
 
-.bottom img{
-    width: 100%;
-}
-
-.collection{
+.hero-section .left .top {
+    background-color: #dadada;
+    border-radius: 15px;
+    padding: 30px;
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 120px;
 }
 
-.collection h2{
-    font-size: 45px;
-    font-style: italic;
+.hero-section .left .top h1 {
+    font-size: 80px;
+    line-height: 1;
+}
+
+.hero-section .left .top h1 span {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-section .left .top h1 span img {
+    width: 200px;
+}
+
+.hero-section .left .bottom {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.hero-section .left .bottom .left,
+.hero-section .left .bottom .right {
+    height: 100%;
+    background-color: red;
+}
+
+
+
+.hero-section>.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px;
+    background-image: url(https://images.unsplash.com/photo-1749324440929-6a9b5cb008b7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4MHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.hero-section .right .actions {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-section .right button {
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.hero-section .right .contact-us {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
